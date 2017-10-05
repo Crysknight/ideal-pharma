@@ -1,0 +1,22 @@
+.ipb-footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 50px;
+	background-color: $ipCBrown;
+	font-size: 10px;
+	font-weight: 300;
+	color: $ipCWhite;
+	> * {
+		display: inline-flex;
+	}
+	a {
+		color: $ipCWhite;
+	}
+	.ipe-copyright-own {
+		margin-right: 35px;
+	}
+	.ipe-footer-link {
+		margin-right: 20px;
+	}
+}

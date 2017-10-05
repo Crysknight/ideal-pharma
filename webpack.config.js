@@ -18,7 +18,6 @@ module.exports = {
 		rules: [
 			{
 				test: /\.scss$/,
-				include: path.resolve(__dirname, 'src/css'),
 				use: extractPlugin.extract({
 					use: [
 						'css-loader', 
@@ -48,6 +47,13 @@ module.exports = {
 						}
 					}
 				]
+			},
+			{
+				test: require.resolve('jquery'),
+				use: [{
+					loader: 'expose-loader',
+					options: '$'
+				}]
 			},
 			{
 				test: /\.html$/,

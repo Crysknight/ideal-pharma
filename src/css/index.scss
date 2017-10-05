@@ -1,10 +1,20 @@
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+
 // Base
 @import './base/fonts';
 @import './base/variables';
 @import './base/mixins';
 
+// Common
+@import './common';
+
 // Blocks
-// @import './blocks/navbar';
+@import './blocks/header';
+@import './blocks/footer';
 
 // Pages
 @import './pages/index';

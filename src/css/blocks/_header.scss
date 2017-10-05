@@ -1,0 +1,69 @@
+.ipb-navbar {
+	box-shadow: 0 0 12px $ipCShadowGrey;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		height: 50px;
+	}
+	.ipb-upper-navbar {
+		background-color: $ipCBlue;
+		a {
+			font-weight: 300;
+			font-size: 10px;
+			color: $ipCWhite;
+		}
+	}
+	.ipe-upper-navitem {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 25px;
+		opacity: 0.75;
+		&.ipe-logo {
+			padding-left: 0;
+			opacity: 1;
+		}
+	}
+	.ipe-upper-navbar-delimiter {
+		width: 1px;
+		height: 20px;
+		background-color: $ipCWhite;
+	}
+	.ipb-bottom-navbar {
+		height: 50px;
+		padding: 0;
+		.navbar-nav {
+			height: 50px;
+		}
+	}
+	.ipe-navitem {
+		margin-right: 35px;
+		&:last-child {
+			margin-right: 0;
+		}
+		a.nav-link {
+			display: flex;
+			align-items: center;
+			height: 50px;
+			padding-right: 0;
+			padding-left: 0;
+			font-size: 14px;
+			position: relative;
+			&:after {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 0px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background-color: $ipCBlue;
+				transition: all 0.3s;
+			}
+			&.ipm-current:after, &:hover:after {
+				height: 4px;
+			}
+		}
+	}
+}
