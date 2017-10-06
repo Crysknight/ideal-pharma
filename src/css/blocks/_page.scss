@@ -1,0 +1,42 @@
+.ipb-page {
+	min-height: calc(100vh - 150px);
+	background-color: $ipCAlmostWhite;
+	.ipe-page-title {
+		margin-top: 30px;
+		margin-bottom: 10px;
+		padding-left: 15px;
+		font-size: 40px;
+		font-weight: bold;
+		letter-spacing: -2px;
+		color: $ipCBlue;
+		@include respond-custom(320px, $md) {
+			font-size: 30px;
+		}
+	}
+	.ipe-title-delimiter {
+		height: 1px;
+		margin: 20px 0;
+		background-color: $ipCBlue;
+	}
+	.ipe-subtitle {
+		margin-top: 30px;
+		font-size: 30px;
+		font-weight: bold;
+		color: $ipCBrown;
+		@include respond-to(lg) {
+			font-size: 25px;
+		}
+		@include respond-to(md) {
+			font-size: 20px;
+		}
+		@include respond-to(sm) {
+			font-size: 25px;
+		}
+		@include respond-to(xs) {
+			font-size: 18px;
+		}
+	}
+	.ipb-tip {
+		margin: 30px 0 35px 0;
+	}
+}

@@ -1,10 +1,14 @@
 .ipb-navbar {
-	box-shadow: 0 0 12px $ipCShadowGrey;
+	box-shadow: $ipXShadow;
+	letter-spacing: 0;
 	.container {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 		height: 50px;
+		@include respond-custom(320px, $md) {
+			max-width: 100%;
+		}
 	}
 	.ipb-upper-navbar {
 		background-color: $ipCBlue;
@@ -24,11 +28,40 @@
 			padding-left: 0;
 			opacity: 1;
 		}
+		@include respond-custom(320px, $lg) {
+			padding: 0 10px;
+			&.ipe-presentation {
+				display: none;
+			}
+			&.ipe-phone {
+		    display: block;
+		    width: 20px;
+		    height: 20px;
+		    padding: 0;
+		    position: absolute;
+		    left: 15px;
+		    top: 65px;
+		    overflow: hidden;
+		    background-image: url('../img/call.svg');
+		    background-size: cover;
+		    z-index: 30;
+		    a {
+		    	display: block;
+		    	width: 20px;
+		    	height: 20px;
+		    	overflow: hidden;
+		    	color: transparent;
+		    }
+			}
+		}
 	}
 	.ipe-upper-navbar-delimiter {
 		width: 1px;
 		height: 20px;
 		background-color: $ipCWhite;
+		@include respond-custom(320px, $lg) {
+			display: none;
+		}
 	}
 	.ipb-bottom-navbar {
 		height: 50px;
@@ -37,8 +70,39 @@
 			height: 50px;
 		}
 	}
+	.ipb-bottom-navbar .navbar-collapse.show {
+		.navbar-nav {
+			height: auto;
+		}
+	}
+	.navbar-toggler {
+		height: 50px;
+		margin-left: auto;
+		outline: none;
+		.toggler-icon-bar {
+			height: 3px;
+			background-color: $ipCBlack;
+			border-radius: 1.5px;
+			margin: 5px;
+		}
+	}
+	.navbar-collapse {
+		@include respond-custom(320px, $md) {
+			position: absolute;
+			top: 50px;
+			left: 0;
+			background-color: $ipCWhite;
+			width: 100%;
+			padding-left: 15px;
+			padding-bottom: 10px;
+			z-index: 500;
+		}
+	}
 	.ipe-navitem {
 		margin-right: 35px;
+		@include respond-to(md) {
+			margin-right: 15px;
+		}
 		&:last-child {
 			margin-right: 0;
 		}
@@ -60,9 +124,15 @@
 				bottom: 0;
 				background-color: $ipCBlue;
 				transition: all 0.3s;
+				@include respond-custom(320px, $md) {
+					display: none;
+				}
 			}
 			&.ipm-current:after, &:hover:after {
 				height: 4px;
+			}
+			@include respond-to(md) {
+				font-size: 12px;
 			}
 		}
 	}

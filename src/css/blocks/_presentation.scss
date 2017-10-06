@@ -1,0 +1,49 @@
+.ipb-presentations-list {
+	margin-bottom: 40px;
+	margin-top: -10px;
+}
+
+.ipb-presentation {
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	align-content: flex-end;
+	height: 250px;
+	margin-top: 30px;
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: $ipXShadow;
+	color: $ipCWhite;
+	&:hover {
+		color: $ipCWhite;
+	}
+	.ipe-presentation-shade {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $ipCBlue;
+		z-index: 0;
+	}
+	.ipe-presentation-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		opacity: 0.15;
+	}
+	.ipe-small-title,
+	.ipe-presentation-title {
+		width: 100%;
+		padding: 0 15px;
+		position: relative;
+		z-index: 30;
+	}
+	.ipe-presentation-title {
+		margin-top: 10px;
+		margin-bottom: 30px;
+		line-height: 1.1;
+	}
+}

@@ -1,0 +1,56 @@
+.ipb-content {
+	display: flex;
+	flex-wrap: wrap;
+	.ipe-content-text {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 15px 30px 0;
+    @include respond-custom(320px, $md) {
+    	flex: 0 0 70%;
+    	max-width: 70%;
+    }
+    p {
+    	margin-bottom: 20px;
+    }
+    h2, h3, h4 {
+    	margin-top: 25px;
+    	font-weight: bold;
+    }
+    h2 {
+    	font-size: 25px;
+    }
+    h3 {
+    	font-size: 20px;
+    }
+    h4, h5 {
+    	font-size: 18px;
+    	font-weight: normal;
+    }
+	}
+	.ipe-content-image {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 4px 0 0 15px;
+    .ipe-image-wrapper {
+    	background-color: $ipCWhite;
+    	border-radius: 4px;
+    	box-shadow: $ipXShadow;
+    	overflow: hidden;
+    }
+    img {
+    	display: block;
+    	width: 100%;
+    }
+    .ipe-image-commentary {
+    	padding: 15px;
+    	font-size: 10px;
+    	font-weight: 300;
+    	text-align: center;
+    	opacity: 0.75;
+    }
+    @include respond-custom(320px, $md) {
+    	flex: 0 0 30%;
+    	max-width: 30%;
+    }
+	}
+}

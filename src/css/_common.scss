@@ -5,6 +5,10 @@
 body {
 	font-family: $ipF;
 	font-size: 20px;
+	letter-spacing: -1px;
+	@include respond-custom(320px, $lg) {
+		font-size: 16px;
+	}
 }
 
 a {
@@ -32,6 +36,9 @@ button {
 .ipe-logo {
 	img {
 		width: 120px;
+		@include respond-custom(320px, $lg) {
+			width: 100px;
+		}
 	}
 }
 
@@ -51,6 +58,10 @@ button {
 	font-size: 50px;
 	font-weight: bold;
 	text-shadow: 3px 4px 15px $ipCBlack;
+	@include respond-custom(320px, $md) {
+		font-size: 35px;
+		line-height: 1.1;
+	}
 }
 
 .ipe-more-about {
@@ -69,11 +80,22 @@ button {
 		border-radius: 25px;
 		color: $ipCBlue;
 	}
+	@include respond-custom(320px, 500px) {
+		width: 180px;
+	}
 }
 
 .ipe-molecule {
+	height: 100%;
+	min-height: calc(100vh - 150px);
 	background-image: url('../img/dna.svg');
 	background-size: 100%;
+}
+
+.ipe-small-title {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 

@@ -15,6 +15,13 @@
 // Blocks
 @import './blocks/header';
 @import './blocks/footer';
+@import './blocks/page';
+@import './blocks/content';
+@import './blocks/tip';
+// Not only contacts, but also contacts-list
+@import './blocks/contact';
+// Not only presentations, but also presentations-list
+@import './blocks/presentation';
 
 // Pages
 @import './pages/index';

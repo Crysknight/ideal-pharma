@@ -112,6 +112,41 @@ module.exports = {
 			template: 'src/index.html',
 			minify: false
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'about.html',
+			template: 'src/about.html',
+			minify: false
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'contacts.html',
+			template: 'src/contacts.html',
+			minify: false
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'investment.html',
+			template: 'src/investment.html',
+			minify: false
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'presentations.html',
+			template: 'src/presentations.html',
+			minify: false
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'press.html',
+			template: 'src/press.html',
+			minify: false
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'products.html',
+			template: 'src/products.html',
+			minify: false
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'article.html',
+			template: 'src/article.html',
+			minify: false
+		}),
 		new CleanWebpackPlugin(['dist'])
 	],
 	devServer: {
