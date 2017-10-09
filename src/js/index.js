@@ -11,6 +11,7 @@ import '../css/index.scss';
 
 import 'bootstrap/js/dist/collapse';
 import { device } from 'device.js';
+import '@fancyapps/fancybox';
 
 
 /* =================================================================================================== */
@@ -21,6 +22,7 @@ import './components/navbar';
 import './components/tip';
 import './components/intlist-item';
 import './components/card';
+import './components/article';
 
 
 device.addClasses(document.documentElement);

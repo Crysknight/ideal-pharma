@@ -80,6 +80,9 @@ button {
 		border-radius: 25px;
 		color: $ipCBlue;
 	}
+	&:focus {
+		outline: none;
+	}
 	@include respond-custom(320px, 500px) {
 		width: 180px;
 	}

@@ -3,6 +3,7 @@
 @import '~bootstrap/scss/grid';
 @import '~bootstrap/scss/nav';
 @import '~bootstrap/scss/navbar';
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.css';
 
 // Base
 @import './base/fonts';
@@ -24,6 +25,7 @@
 // |-- Blocks belonging to certain pages
 @import './blocks/contact'; // Not only contacts, but also contacts-list
 @import './blocks/new';
+@import './blocks/article';
 
 // Pages
 @import './pages/index';

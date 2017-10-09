@@ -1,12 +1,15 @@
 .ipb-page {
 	min-height: calc(100vh - 150px);
 	background-color: $ipCAlmostWhite;
+	.col-10 {
+		padding-top: 30px;
+	}
 	.ipe-page-title {
-		margin-top: 30px;
 		margin-bottom: 10px;
 		padding-left: 15px;
 		font-size: 40px;
 		font-weight: bold;
+		line-height: 1.2;
 		letter-spacing: -2px;
 		color: $ipCBlue;
 		@include respond-custom(320px, $md) {
