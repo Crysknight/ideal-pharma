@@ -23,62 +23,8 @@
 			padding-left: 0;
 		}
 	}
-	.ipe-contact-inner {
+	.ipb-card {
 		height: 100%;
-		padding-top: 160px;
-		position: relative;
-		border-radius: 4px;
-		overflow: hidden;
-		box-shadow: $ipXShadow;
-		@include respond-to(md) {
-			padding-top: 100px;
-		}
-		@include respond-custom(320px, $sm) {
-			padding-top: 100px;
-		}
-	}
-	img.ipe-contact-image {
-		width: 100%;
-		min-height: 100px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 0;
-	}
-	.ipe-contact-country {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 23px;
-		padding: 2px 25px 0;
-		position: absolute;
-		left: 15px;
-		top: 15px;
-		border: 1px solid $ipCWhite;
-		color: $ipCWhite;
-		font-size: 12px;
-		font-weight: bold;
-		text-transform: uppercase;
-	}
-	.ipe-contact-info {
-		height: 100%;
-		padding: 25px 15px;
-		position: relative;
-		z-index: 30;
-		background-color: $ipCWhite;
-	}
-	.ipe-contact-company {
-		color: $ipCBrown;
-	}
-	.ipe-contact-title {
-		margin-top: 10px;
-		margin-bottom: 15px;
-		line-height: 1.2;
-		font-weight: bold;
-		color: $ipCBlue;
-		@include respond-to(md) {
-			font-size: 16px;
-		}
 	}
 	.ipe-contact-label {
 		margin-top: 20px;

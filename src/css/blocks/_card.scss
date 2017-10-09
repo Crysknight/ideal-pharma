@@ -1,0 +1,82 @@
+.ipb-card {
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: $ipCWhite;
+	box-shadow: $ipXShadow;
+	.ipe-card-shade {
+		width: 100%;
+		height: 160px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $ipCBlue;
+		@include respond-to(md) {
+			height: 100px;
+		}
+		@include respond-custom(320px, $sm) {
+			height: 100px;
+		}
+	}
+	.ipe-card-image-wrapper {
+		height: 160px;
+		overflow: hidden;
+		@include respond-to(md) {
+			height: 100px;
+		}
+		@include respond-custom(320px, $sm) {
+			height: 100px;
+		}
+	}
+	.ipe-card-image.ipm-shaded {
+		opacity: 0.3;
+	}
+	.ipe-card-label {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 23px;
+		padding: 2px 25px 0;
+		position: absolute;
+		left: 15px;
+		top: 15px;
+		border: 1px solid $ipCWhite;
+		color: $ipCWhite;
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: -0.5px;
+	}
+	.ipe-card-small-title {
+		margin-top: 25px;
+		margin-left: 15px;
+		color: $ipCBrown;
+	}
+	.ipe-card-title {
+		margin: 10px 15px 15px;
+		line-height: 1.2;
+		font-weight: bold;
+		color: $ipCBlue;
+		@include respond-to(md) {
+			font-size: 16px;
+		}
+	}
+	.ipe-card-content {
+		height: 100%;
+		padding: 0 15px 25px;
+		position: relative;
+		z-index: 30;
+	}
+	.ipe-card-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 40px;
+		background-color: $ipCBrown;
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $ipCWhite;
+		cursor: pointer;
+	}
+}

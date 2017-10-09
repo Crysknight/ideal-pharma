@@ -47,6 +47,7 @@
     	font-weight: 300;
     	text-align: center;
     	opacity: 0.75;
+        letter-spacing: 0;
     }
     @include respond-custom(320px, $md) {
     	flex: 0 0 30%;

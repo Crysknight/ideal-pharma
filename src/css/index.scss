@@ -13,15 +13,17 @@
 @import './common';
 
 // Blocks
+// |-- Common blocks
 @import './blocks/header';
 @import './blocks/footer';
 @import './blocks/page';
 @import './blocks/content';
 @import './blocks/tip';
-// Not only contacts, but also contacts-list
-@import './blocks/contact';
-// Not only presentations, but also presentations-list
-@import './blocks/presentation';
+@import './blocks/card';
+@import './blocks/intlist-item';
+// |-- Blocks belonging to certain pages
+@import './blocks/contact'; // Not only contacts, but also contacts-list
+@import './blocks/new';
 
 // Pages
 @import './pages/index';

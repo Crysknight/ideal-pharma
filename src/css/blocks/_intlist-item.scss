@@ -1,9 +1,9 @@
-.ipb-presentations-list {
+.ipb-interactive-list {
 	margin-bottom: 40px;
 	margin-top: -10px;
 }
 
-.ipb-presentation {
+.ipb-intlist-item {
 	display: flex;
 	align-items: flex-end;
 	flex-wrap: wrap;
@@ -18,7 +18,7 @@
 	&:hover {
 		color: $ipCWhite;
 	}
-	.ipe-presentation-shade {
+	.ipe-intlist-item-shade {
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -27,7 +27,7 @@
 		background-color: $ipCBlue;
 		z-index: 0;
 	}
-	.ipe-presentation-bg {
+	.ipe-intlist-item-bg {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -35,15 +35,16 @@
 		opacity: 0.15;
 	}
 	.ipe-small-title,
-	.ipe-presentation-title {
+	.ipe-intlist-item-title {
 		width: 100%;
 		padding: 0 15px;
 		position: relative;
 		z-index: 30;
 	}
-	.ipe-presentation-title {
+	.ipe-intlist-item-title {
 		margin-top: 10px;
 		margin-bottom: 30px;
+		font-size: 20px;
 		line-height: 1.1;
 	}
 }

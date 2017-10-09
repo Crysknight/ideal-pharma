@@ -19,7 +19,8 @@ import { device } from 'device.js';
 
 import './components/navbar';
 import './components/tip';
-import './components/presentation';
+import './components/intlist-item';
+import './components/card';
 
 
 device.addClasses(document.documentElement);

@@ -1,0 +1,45 @@
+.ipb-new {
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 40px;
+		@include respond-custom(320px, $md) {
+			margin-bottom: 30px;
+		}
+	}
+	.ipe-new-teaser {
+		margin-bottom: 0;
+		font-size: 14px;
+		line-height: 1.2;
+		letter-spacing: 0;
+	}
+	&.ipm-no-image {
+		padding-top: 30px;
+	}
+	&.ipm-article {
+		&.ipm-no-image .ipe-card-label {
+			color: $ipCBrown;
+			border-color: $ipCBrown;
+		}
+		.ipe-card-shade {
+			background-color: $ipCShadeArticle;
+		}
+	}
+	&.ipm-press-release {
+		&.ipm-no-image .ipe-card-label {
+			color: $ipCBlueGrey;
+			border-color: $ipCBlueGrey;
+		}
+		.ipe-card-shade {
+			background-color: $ipCShadePressRelease;
+		}
+	}
+	&.ipm-interview {
+		&.ipm-no-image .ipe-card-label {
+			color: $ipCBlue;
+			border-color: $ipCBlue;
+		}
+		.ipe-card-shade {
+			background-color: $ipCShadeInterview;
+		}
+	}
+}
