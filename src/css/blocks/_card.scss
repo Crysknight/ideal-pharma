@@ -79,5 +79,9 @@
 		text-transform: uppercase;
 		color: $ipCWhite;
 		cursor: pointer;
+		transition: all 0.3s;
+		&:hover {
+			background-color: $ipCBlue;
+		}
 	}
 }

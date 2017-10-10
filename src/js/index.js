@@ -19,10 +19,20 @@ import '@fancyapps/fancybox';
 /* =================================================================================================== */
 
 import './components/navbar';
-import './components/tip';
 import './components/intlist-item';
+import './components/new';
 import './components/card';
 import './components/article';
 
 
 device.addClasses(document.documentElement);
+
+if ($('html.ios').length > 0) {
+	setTimeout(function() {
+		for (let dropdown of document.querySelectorAll('.nav-item.dropdown')) {
+			dropdown.addEventListener('click', function() {
+				console.log('hello, motherfucker');
+			});
+		}
+	}, 1000);
+}

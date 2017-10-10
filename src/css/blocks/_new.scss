@@ -1,9 +1,16 @@
 .ipb-new {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
+	width: calc(33% - 20px);
+	@include respond-custom(401px, $md) {
+		width: calc(50% - 22.5px);
+	}
+	@include respond-custom(320px, 400px) {
+		width: calc(100% - 30px);
+	}
 	&:last-child {
 		margin-bottom: 40px;
 		@include respond-custom(320px, $md) {
-			margin-bottom: 30px;
+			margin-bottom: 15px;
 		}
 	}
 	.ipe-new-teaser {

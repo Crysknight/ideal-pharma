@@ -17,38 +17,6 @@
 		left: 30px;
 		background-image: url('../img/arrow-text.svg');
 	}
-	html.mobile & {
-		display: block;
-		max-height: 69px;
-		overflow: hidden;
-		position: relative;
-		transition: all 0.3s;
-		&:after {
-	    content: '';
-	    display: block;
-	    width: calc(100% - 65px);
-	    position: absolute;
-	    height: 90px;
-	    bottom: 0;
-	    right: 0;
-	    border-radius: 0 0 4px 4px;
-	    background: linear-gradient(to top, #fff, transparent);
-	    z-index: 30;
-	    transition: all 0.3s;
-		}
-		&:before {
-	    transition: all 0.3s;
-		}
-		&.ipm-unfolded {
-			max-height: 400px;
-		}
-		&.ipm-unfolded:before {
-			transform: rotate(90deg);
-		}
-		&.ipm-unfolded:after {
-			height: 0;
-		}
-	}
 	p {
 		margin-bottom: 0;
 	}
