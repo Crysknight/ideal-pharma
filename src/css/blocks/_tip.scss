@@ -17,6 +17,12 @@
 		left: 30px;
 		background-image: url('../img/arrow-text.svg');
 	}
+	&.ipm-brown {
+		color: $ipCBrown;
+		&:before {
+			background-image: url('../img/arrow-text-brown.svg');
+		}
+	}
 	p {
 		margin-bottom: 0;
 	}

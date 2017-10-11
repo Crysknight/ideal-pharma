@@ -1,8 +1,9 @@
 .ipb-page {
 	min-height: calc(100vh - 150px);
 	background-color: $ipCAlmostWhite;
-	.col-10 {
+	.col-12.col-md-10 {
 		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	.ipe-page-title {
 		margin-bottom: 10px;
@@ -23,6 +24,7 @@
 	}
 	.ipe-subtitle {
 		margin-top: 30px;
+		margin-bottom: 15px;
 		font-size: 30px;
 		font-weight: bold;
 		color: $ipCBrown;
@@ -40,6 +42,6 @@
 		}
 	}
 	.ipb-tip {
-		margin: 30px 0 35px 0;
+		margin: 15px 0 15px 0;
 	}
 }

@@ -1,0 +1,31 @@
+.ipb-section {
+	margin-bottom: 30px;
+	.ipe-section-title {
+		margin-top: 30px;
+		font-size: 30px;
+		font-weight: bold;
+		color: $ipCBrown;
+		@include respond-to(lg) {
+			font-size: 25px;
+		}
+		@include respond-to(md) {
+			font-size: 20px;
+		}
+		@include respond-to(sm) {
+			font-size: 25px;
+		}
+		@include respond-to(xs) {
+			font-size: 18px;
+		}
+	}
+	.ipe-section-delimiter {
+		width: 100%;
+		height: 1px;
+		margin-top: 40px;
+		background-color: $ipCBlue;
+	}
+	&.ipm-no-title .ipe-section-delimiter {
+		background-color: $ipCBrown;
+		margin-bottom: 40px;
+	}
+}

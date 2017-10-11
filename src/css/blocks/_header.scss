@@ -33,26 +33,26 @@
 			&.ipe-presentation {
 				display: none;
 			}
-			&.ipe-phone {
-		    display: block;
-		    width: 20px;
-		    height: 20px;
-		    padding: 0;
-		    position: absolute;
-		    left: 15px;
-		    top: 65px;
-		    overflow: hidden;
-		    background-image: url('../img/call.svg');
-		    background-size: cover;
-		    z-index: 30;
-		    a {
-		    	display: block;
-		    	width: 20px;
-		    	height: 20px;
-		    	overflow: hidden;
-		    	color: transparent;
-		    }
-			}
+		}
+		html.mobile &.ipe-phone, html.tablet &.ipe-phone {
+	    display: block;
+	    width: 20px;
+	    height: 20px;
+	    padding: 0;
+	    position: absolute;
+	    left: 15px;
+	    top: 65px;
+	    overflow: hidden;
+	    background-image: url('../img/call.svg');
+	    background-size: cover;
+	    z-index: 30;
+	    a {
+	    	display: block;
+	    	width: 20px;
+	    	height: 20px;
+	    	overflow: hidden;
+	    	color: transparent;
+	    }
 		}
 	}
 	.ipe-upper-navbar-delimiter {

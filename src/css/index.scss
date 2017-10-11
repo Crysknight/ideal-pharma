@@ -22,9 +22,10 @@
 @import './blocks/content';
 @import './blocks/tip';
 @import './blocks/card';
-@import './blocks/intlist-item';
+@import './blocks/intlist-item'; // Not only intlist-item, but also interactive-list
+@import './blocks/section';
 // |-- Blocks belonging to certain pages
-@import './blocks/contact'; // Not only contacts, but also contacts-list
+@import './blocks/contact'; // Not only contact, but also contacts-list
 @import './blocks/new';
 @import './blocks/article';
 

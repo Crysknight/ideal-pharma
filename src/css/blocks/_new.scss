@@ -7,12 +7,6 @@
 	@include respond-custom(320px, 400px) {
 		width: calc(100% - 30px);
 	}
-	&:last-child {
-		margin-bottom: 40px;
-		@include respond-custom(320px, $md) {
-			margin-bottom: 15px;
-		}
-	}
 	.ipe-new-teaser {
 		margin-bottom: 0;
 		font-size: 14px;
