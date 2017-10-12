@@ -2,12 +2,12 @@
 	.col-10 {
 		padding-top: 0;
 	}
-	.ipe-row {
+	.ipe-article-grid {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -15px;
 	}
-	.ipe-col-70 {
+	.ipe-article-header, .ipe-article-content {
 		flex: 0 0 70%;
 		max-width: 70%;
 		padding: 0 15px;
@@ -16,7 +16,12 @@
 			max-width: 100%;
 		}
 	}
-	.ipe-col-30 {
+	.ipe-article-grid.ipm-no-media .ipe-article-header,
+	.ipe-article-grid.ipm-no-media .ipe-article-content {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.ipe-media-header, .ipe-media-content {
 		flex: 0 0 30%;
 		max-width: 30%;
 		padding: 0 15px;
@@ -75,6 +80,7 @@
 		}
 		img {
 			width: 100%;
+			max-width: 800px;
 			margin: 20px 0;
 			border-radius: 4px;
 			box-shadow: $ipXShadow;
