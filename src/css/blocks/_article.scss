@@ -41,12 +41,22 @@
 			margin-left: 15px;
 			margin-bottom: 15px;
 			padding: 2px 25px 0;
-			border: 1px solid $ipCBrown;
 			font-size: 12px;
 			font-weight: bold;
 			text-transform: uppercase;
 			letter-spacing: -0.5px;
+		}
+		.ipe-article-class.ipm-article {
+			border: 1px solid $ipCBrown;
 			color: $ipCBrown;
+		}
+		.ipe-article-class.ipm-press-release {
+			border: 1px solid $ipCBlueGrey;
+			color: $ipCBlueGrey;
+		}
+		.ipe-article-class.ipm-interview {
+			border: 1px solid $ipCBlue;
+			color: $ipCBlue;
 		}
 		.ipe-article-date {
 			margin: 20px 0 -10px 15px;
