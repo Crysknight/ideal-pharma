@@ -19,6 +19,7 @@
 		}
 	}
 	.ipe-card-image-wrapper {
+		display: block;
 		height: 160px;
 		overflow: hidden;
 		@include respond-to(md) {
