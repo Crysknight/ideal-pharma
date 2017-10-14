@@ -1,0 +1,30 @@
+.ipb-page-navi {
+	.ipe-navi-delimiter {
+		height: 1px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		background-color: $ipCBrown;
+	}
+	.ipe-navi {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.ipe-navi-link, .ipe-navi-current, .ipe-dots {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 25px;
+			height: 25px;
+			margin: 0 4px;
+			padding: 2px 2px 0 0;
+			font-size: 12px;
+			font-weight: bold;
+			color: $ipCBrown;
+		}
+		.ipe-navi-current {
+			background-color: $ipCBrown;
+			border-radius: 50%;
+			color: $ipCWhite;
+		}
+	}
+}

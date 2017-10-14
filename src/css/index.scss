@@ -24,10 +24,12 @@
 @import './blocks/card';
 @import './blocks/intlist-item'; // Not only intlist-item, but also interactive-list
 @import './blocks/section';
+@import './blocks/page-navi';
 // |-- Blocks belonging to certain pages
 @import './blocks/contact'; // Not only contact, but also contacts-list
 @import './blocks/new';
 @import './blocks/article';
+@import './blocks/404';
 
 // Pages
 @import './pages/index';
