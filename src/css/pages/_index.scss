@@ -2,10 +2,15 @@
 	display: flex;
 	align-items: center;
 	height: calc(100vh - 150px);
+	position: relative;
 	background-image: url('../img/temp-bg.jpg');
 	background-size: cover;
 	background-position: center center;
 	color: $ipCWhite;
+	overflow: hidden;
+	.container {
+		z-index: 60;
+	}
 	.ipe-molecule {
 		height: calc(100vh - 150px);
 	}
@@ -15,5 +20,23 @@
 	}
 	.ipe-main-wrapper {
 		padding: 0 15px;
+	}
+	video.ipe-main-page-video, .ipe-video-overlay {
+		min-width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 50;
+		html.mobile &, html.tablet & {
+			display: none;
+		}
+	}
+	video.ipe-main-page-video {
+		opacity: 0;
+	}
+	.ipe-video-overlay {
+		height: calc(100vh - 150px);
+		z-index: 55;
+		background-color: rgba(49, 49, 49, 0.85);
 	}
 }

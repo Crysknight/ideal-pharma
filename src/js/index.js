@@ -18,6 +18,7 @@ import '@fancyapps/fancybox';
 /* < COMPONENTS > */
 /* =================================================================================================== */
 
+import './components/main-page';
 import './components/navbar';
 import './components/intlist-item';
 import './components/new';
